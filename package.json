@@ -13,7 +13,10 @@
     "prepublishOnly": "pnpm build && pnpm test",
     "release:patch": "npm version patch && pnpm publish",
     "release:minor": "npm version minor && pnpm publish",
-    "release:major": "npm version major && pnpm publish"
+    "release:major": "npm version major && pnpm publish",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "changeset publish"
   },
   "exports": {
     ".": {
@@ -47,6 +50,7 @@
   "homepage": "https://github.com/YoshidaTomoaki/eslint-plugin-tailwind-ban#readme",
   "packageManager": "pnpm@10.8.1",
   "devDependencies": {
+    "@changesets/cli": "^2.29.4",
     "@types/node": "^22.15.21",
     "@typescript-eslint/parser": "^8.32.1",
     "@typescript-eslint/rule-tester": "^8.32.1",
