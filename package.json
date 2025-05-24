@@ -7,9 +7,10 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "prepublishOnly": "pnpm build",
     "lint:playground": "eslint playground",
-    "test": "echo \"No tests yet\" && exit 0"
+    "test": "vitest run",
+    "test:ui": "vitest --ui",
+    "prepublishOnly": "pnpm build && pnpm test"
   },
   "keywords": [
     "eslint",
@@ -33,9 +34,13 @@
   "devDependencies": {
     "@types/node": "^22.15.21",
     "@typescript-eslint/parser": "^8.32.1",
+    "@typescript-eslint/rule-tester": "^8.32.1",
     "@typescript-eslint/utils": "^8.32.1",
+    "@vitest/ui": "^3.1.4",
     "eslint": "^9.27.0",
     "react": "^19.1.0",
-    "typescript": "^5.8.3"
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.4"
   }
 }
