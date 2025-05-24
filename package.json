@@ -10,7 +10,10 @@
     "lint:playground": "eslint playground",
     "test": "vitest run",
     "test:ui": "vitest --ui",
-    "prepublishOnly": "pnpm build && pnpm test"
+    "prepublishOnly": "pnpm build && pnpm test",
+    "release:patch": "npm version patch && pnpm publish",
+    "release:minor": "npm version minor && pnpm publish",
+    "release:major": "npm version major && pnpm publish"
   },
   "exports": {
     ".": {
