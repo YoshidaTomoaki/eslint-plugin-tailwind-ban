@@ -1,14 +1,31 @@
 {
   "name": "eslint-plugin-tailwind-ban",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "ESLint rule to disallow specific Tailwind CSS classes.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "test": "echo \"No tests yet\" && exit 0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "tailwind",
+    "lint",
+    "ban",
+    "design-tokens"
+  ],
+  "author": "Tomoaki Yoshida <ydaydada.work@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YoshidaTomoaki/eslint-plugin-tailwind-ban.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YoshidaTomoaki/eslint-plugin-tailwind-ban/issues"
+  },
+  "homepage": "https://github.com/YoshidaTomoaki/eslint-plugin-tailwind-ban#readme",
   "packageManager": "pnpm@10.8.1",
   "devDependencies": {
     "@types/node": "^22.15.21",
