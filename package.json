@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-tailwind-ban",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ESLint rule to disallow specific Tailwind CSS classes.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
