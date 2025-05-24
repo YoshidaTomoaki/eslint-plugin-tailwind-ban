@@ -2,15 +2,27 @@
   "name": "eslint-plugin-tailwind-ban",
   "version": "1.0.0",
   "description": "ESLint rule to disallow specific Tailwind CSS classes.",
-  "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "type": "module",
   "scripts": {
     "build": "tsc",
     "lint:playground": "eslint playground",
     "test": "vitest run",
     "test:ui": "vitest --ui",
     "prepublishOnly": "pnpm build && pnpm test"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [
     "eslint",
