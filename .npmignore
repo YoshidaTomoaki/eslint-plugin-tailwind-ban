@@ -6,4 +6,3 @@ vitest.*
 .eslintrc*
 tsconfig.json
 vite.config.*
-pnpm-lock.yaml
